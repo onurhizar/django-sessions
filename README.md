@@ -17,9 +17,16 @@ open project folder and init django with:
 `python3 manage.py migrate`
 `python3 manage.py runserver`
 
+--- v0.0.1 end ---
 
+`python manage.py startapp api`
+ADD rest_framework and api apps @ server/settings.py
+ADD view @ api/views.py
+ADD urls.py file @ core/urls.py
+EDIT urls @ server/urls.py
 
 
 # Changelog
 * v0.0.1 django initialized
+* v0.0.2 drf test view
 
