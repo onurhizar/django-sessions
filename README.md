@@ -25,8 +25,14 @@ ADD view @ api/views.py
 ADD urls.py file @ core/urls.py
 EDIT urls @ server/urls.py
 
+--- v0.0.2 end ---
+
+EDIT view @ api/views.py, sessions is used for visit count track
+
+--- v0.0.3 end ---
+
 
 # Changelog
 * v0.0.1 django initialized
 * v0.0.2 drf test view
-
+* v0.0.3 session cookie init
