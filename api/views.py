@@ -1,5 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from .models import Task
+from .serializers import TaskSerializer
 
 class TestView(APIView):
     def get(self, request):
@@ -9,3 +11,10 @@ class TestView(APIView):
 
         content = {"msg":"hello", key:request.session[key]}
         return Response(content)
+
+
+class TaskView(APIView):
+    def get(self, request):
+        queryset = Task.objects.all()
+        serializer = TaskSerializer(queryset, many=True)
+        return Response(serializer.data)

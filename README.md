@@ -31,8 +31,13 @@ EDIT view @ api/views.py, sessions is used for visit count track
 
 --- v0.0.3 end ---
 
+ADD Task model @ api/models.py
+ADD TaskSerializer @ api/serializers.py
+ADD view route /api/task/
+ADD Task model to admin page 
 
 # Changelog
 * v0.0.1 django initialized
 * v0.0.2 drf test view
 * v0.0.3 session cookie init
+* v0.0.4 task model added
