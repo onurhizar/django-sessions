@@ -16,7 +16,6 @@ open project folder and init django with:
 `django-admin startproject server .`
 `python3 manage.py migrate`
 `python3 manage.py runserver`
-
 --- v0.0.1 end ---
 
 `python manage.py startapp api`
@@ -24,20 +23,23 @@ ADD rest_framework and api apps @ server/settings.py
 ADD view @ api/views.py
 ADD urls.py file @ core/urls.py
 EDIT urls @ server/urls.py
-
 --- v0.0.2 end ---
 
 EDIT view @ api/views.py, sessions is used for visit count track
-
 --- v0.0.3 end ---
 
 ADD Task model @ api/models.py
 ADD TaskSerializer @ api/serializers.py
 ADD view route /api/task/
 ADD Task model to admin page 
+--- v0.0.4 end ---
+
+
+
 
 # Changelog
 * v0.0.1 django initialized
 * v0.0.2 drf test view
 * v0.0.3 session cookie init
 * v0.0.4 task model added
+* v0.0.5 task filter (shows only active ones)

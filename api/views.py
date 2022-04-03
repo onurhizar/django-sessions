@@ -15,6 +15,6 @@ class TestView(APIView):
 
 class TaskView(APIView):
     def get(self, request):
-        queryset = Task.objects.all()
+        queryset = Task.objects.filter(active=True)
         serializer = TaskSerializer(queryset, many=True)
         return Response(serializer.data)
